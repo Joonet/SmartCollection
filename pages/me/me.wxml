@@ -1,0 +1,30 @@
+
+<view class="container more">
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <text>油桶编号：</text>
+        <text>{{mac}}</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <text>液位值：</text>
+        <text>{{levpp}} %</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <text>在线状态：</text>
+        <text wx:if="{{online != 1}}">离线</text>
+        <text wx:else>在线</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <text>电池电压：</text>
+        <text>{{batmv}} mv</text>
+      </view>
+    </view>
+  </view>
+</view>

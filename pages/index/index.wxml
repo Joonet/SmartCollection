@@ -1,0 +1,21 @@
+<!--index.wxml-->
+
+<view >
+  <map id="smartCollectionMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="bindmarkertap" bindregionchange="bindregionchange" bindcontroltap="bindcontroltap" show-location>
+    <cover-view class="backgroud" hidden="{{hidden}}" hover-class="none"></cover-view>
+    <cover-view class="inner" hidden="{{hidden}}"> 
+      <cover-image class='inner_button_bg1' src='/images/费油变宝主页_0000s_bg_green.png' style="width:50%;height:9.5%;"></cover-image> 
+      <cover-image class='inner_main_bg' src='/images/费油变宝主页_0000s_bg_info.png' style="width:76%;height:55%;"></cover-image>
+      <cover-image class='inner_button_bg2' src='/images/费油变宝主页_0000s_bg_green.png' style="width:50%;height:9.5%;" bindtap='gotoInfo'></cover-image>  
+
+      
+    </cover-view>
+    <cover-view class="inner_text_tile">@夫子庙站点</cover-view>
+    <cover-view class="inner_text_content"> 邮箱已收集</cover-view>
+    <cover-view class="inner_text_content_lev"> 100 %</cover-view>
+    <cover-image class='button_close' hidden="{{hidden}}" bindtap='tapViewEvent' src='/images/费油变宝主页_0000s_close_button.png' style="width:30px;height:30px;">
+    </cover-image> 
+  </map>
+</view>
+  
+

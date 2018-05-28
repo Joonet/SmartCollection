@@ -1,0 +1,8 @@
+
+<view class='contaniner'>
+  <image class='bg_big' mode='widthFix' src='/images/费油变宝主页_0000_bg_map.png'> </image>
+  <image animation="{{animationData1}}" class='bg_view' mode='widthFix' src='/images/车辆到达_0004_bg_car.png'></image> 
+  <image animation="{{animationData2}}" class='car' mode='widthFix' src='/images/车辆到达_0004_car.png'></image>
+
+  <button class="button_car" style="background-image:url({{base64_url_bf_button_green}});" plain='true' bindtap='carArrived'>车辆到达</button>
+</view>

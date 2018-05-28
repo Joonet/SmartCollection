@@ -1,0 +1,64 @@
+/* pages/info/info.wxss */
+.contaniner {
+  height: 100vh;  
+  display: flex;  
+  flex-direction: column;  
+  padding: 0;  
+  box-sizing: border-box;  
+  /* background-image: "/images/费油变宝主页.png"  */
+}
+
+.contaniner .bg_big {
+  height: 100%;
+  width:100%
+}
+
+.contaniner .b {
+  bottom: 3.2%;
+  left: 3%;
+  width: 45%;
+  height: 8%;
+  text-align: center;
+  color: #FFF;
+  position: absolute; 
+  font-size: 17pt;
+  font-family: Courier New, Courier, monospace;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  border: none;
+  border-radius: 0px;
+}
+
+.contaniner .register {
+  bottom: 4.5%;
+  left: 3%;
+  width: 40%;
+  height: 7%;
+  text-align: center;
+  color: #FFF;
+  position: absolute; 
+  font-size: 17pt;
+  font-family: Courier New, Courier, monospace;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  border: none;
+  border-radius: 0px;
+}
+.inputView_name {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 3%;
+  text-align: center;
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21pt;
+}
+
+.aboutData {
+  position: absolute;
+  /* color: #FFA500; */
+  color: #F8D448;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21pt;
+}

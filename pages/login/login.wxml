@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+
+<view class="contaniner">
+  <image class="bg_big" src='/images/商家注册信息.png'>
+    <!-- <button class="register" style="background-image:url({{base64_url_bf_button_yellow}});" plain='true' bindtap='register'>立即注册</button> -->
+   <view class="inputView_name">  
+      <text class="loginLab">姓名</text>  
+      <input class="inputText" placeholder="请输入店家姓名" bindinput="storekeeperNameInput" />  
+    </view>  
+
+     <view class="inputView_phone">  
+      <text class="loginLab">电话</text> 
+      <input class="inputText" type="number" maxlength="11" adjust-position="true" placeholder="请输入联系电话" 
+      bindinput="phoneInput"/>  
+    </view>
+
+    <view class="loginBtnView">  
+      <button class="loginBtn" style="background-image:url({{base64_url_bg_button_login}});" plain='true' bindtap="login">注册并登录</button>  
+      </view>  
+  </image>
+</view>

@@ -1,0 +1,5 @@
+<view class="contaniner">
+  <image class="bg_big" src='/images/费油变宝主页.png'>
+    <button class="register" style="background-image:url({{base64_url_bf_button_yellow}});" plain='true' bindtap='register'>立即注册</button>
+  </image>
+</view>
