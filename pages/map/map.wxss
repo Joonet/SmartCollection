@@ -8,6 +8,14 @@
   /* background-image: "/images/费油变宝主页.png"  */
 }
 
+.blurView {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  background-color: white;
+}
+
 .customView {
   width: 50%;
   height: 50%;

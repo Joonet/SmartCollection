@@ -14,7 +14,7 @@ App({
       wx.request({
         url: 'https://elegzh.top/api/index/index',
         data: {
-          'id': 1
+          'id': 4
         },
         header: {},
         method: 'GET',

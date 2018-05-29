@@ -1,26 +1,25 @@
 <!--pages/map/map.wxml-->
 <view class="contaniner">
-   <image class="bg_big" src='/images/bg_map.png'>
-    <!-- <image class='trueIcon' src='/images/费油变宝主页_0000s_marker_full.png' bindtap="bindmarkertap"></image> -->
+  <image class="bg_big" src='/images/bg_map.png'>
     <button class='trueIcon' bindtap='bindmarkertap' style=" background-image:url({{base64_url_bf_button_markerIcon}});" plain='true'></button>
     <text>{{lev}}%</text>
   </image>
+  <view class='blurView' hidden='{{hidden}}'></view>
+  <view class="inner" hidden="{{hidden}}"> 
+    <button class='inner_button_bg1' style="width:50%;height:9.5%; background-image:url({{base64_url_bf_button_green}});" plain='true'>@夫子庙站点</button>  
+    <image class='inner_main_bg' src='/images/费油变宝主页_0000s_bg_info.png' style="width:76%;height:55%;"></image>
 
-    <view class="inner" hidden="{{hidden}}"> 
-      <button class='inner_button_bg1' style="width:50%;height:9.5%; background-image:url({{base64_url_bf_button_green}});" plain='true'>@夫子庙站点</button>  
-      <image class='inner_main_bg' src='/images/费油变宝主页_0000s_bg_info.png' style="width:76%;height:55%;"></image>
+    <block wx:if="{{lev < alertLev && !isCarArrived}}">
+      <image class='inner_button_bg2' src='/images/Vector Smart Object.png' style="width:50%;height:13%;"></image>  
+      </block>
 
-      <block wx:if="{{lev < 95 && !isCarArrived}}">
-       <image class='inner_button_bg2' src='/images/Vector Smart Object.png' style="width:50%;height:13%;"></image>  
-       </block>
+      <block wx:if="{{lev >= alertLev && !isCarArrived}}">
+      <image class='inner_button_bg2' src='/images/当前商家剩油收集进度_已收满.png' style="width:50%;height:13%;" bindtap='goToCar'></image>  
+      </block>
 
-       <block wx:if="{{lev >= 95 && !isCarArrived}}">
-       <image class='inner_button_bg2' src='/images/当前商家剩油收集进度_已收满.png' style="width:50%;height:13%;" bindtap='goToCar'></image>  
-       </block>
-
-      <block wx:if="{{isCarArrived}}">
-       <button class='inner_button_bg3' bindtap='goToHome' style="width:50%;height:9.5%; background-image:url({{base64_url_bf_button_green}});" plain='true'>  确认完成回收</button> 
-       </block>
+    <block wx:if="{{isCarArrived}}">
+      <button class='inner_button_bg3' bindtap='goToHome' style="width:50%;height:9.5%; background-image:url({{base64_url_bf_button_green}});" plain='true'>  确认完成回收</button> 
+      </block>
     </view>
     
     <image class='button_close' hidden="{{hidden}}" bindtap='closeInnerPage' src='/images/费油变宝主页_0000s_close_button.png' style="width:30px;height:30px;">
