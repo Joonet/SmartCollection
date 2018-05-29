@@ -1,4 +1,0 @@
-<!--pages/test2/test2.wxml-->
-<!-- <view></view> -->
-<canvas class='myCanvas' style='border: 1px solid; width:200px; height:200px; top: 100px; left:100px;' canvas-id='myCanvas'></canvas>
-<canvas canvas-id='myCanvas2' style='border: 1px solid black; width:200px; height:200px; top: 150px; left:100px; position: absolute;'></canvas>
