@@ -30,15 +30,15 @@
 }
 
 .contaniner .register {
+  position: absolute; 
   bottom: 4.5%;
   left: 3%;
   width: 40%;
   height: 7%;
   text-align: center;
   color: #FFF;
-  position: absolute; 
-  font-size: 17pt;
-  font-family: Courier New, Courier, monospace;
+  font-size: 15pt;
+  font-weight: 800;
   background-size: 100% 100%;
   background-repeat:no-repeat;
   border: none;
@@ -57,8 +57,10 @@
 
 .aboutData {
   position: absolute;
-  /* color: #FFA500; */
+  width: 35%; 
+  height: 10%;
+  text-align: right;
   color: #F8D448;
-  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
   font-size: 21pt;
 }

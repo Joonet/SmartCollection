@@ -1,7 +1,9 @@
 <!--pages/map/map.wxml-->
 <view class="contaniner">
   <image class="bg_big" src='/images/bg_map.png'>
-    <button class='trueIcon' bindtap='bindmarkertap' style=" background-image:url({{base64_url_bf_button_markerIcon}});" plain='true'></button>
+    <image class='trueIcon' bindtap='bindmarkertap' src='/images/费油变宝主页_0000s_marker_full.png'>
+    </image>   
+    
     <text>{{lev}}%</text>
   </image>
   <view class='blurView' hidden='{{hidden}}'></view>
@@ -28,7 +30,7 @@
 </view> 
 
 <canvas hidden='{{hidden}}' class='myCanvas' style='border: none; width:47%; height:25%; top: 32%; left:25%;' canvas-id='myCanvas'></canvas>
-<canvas hidden='{{hidden}}' canvas-id='myCanvas2' style='border: none; width:47%; height:10%; top: 35%; left:25%; position: absolute;'></canvas>
+<canvas hidden='{{hidden}}' canvas-id='myCanvas2' style='border: none; width:47%; height:15%; top: 35%; left:25%; position: absolute;'></canvas>
 
 
 

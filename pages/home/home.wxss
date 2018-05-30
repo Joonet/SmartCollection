@@ -14,15 +14,16 @@
 }
 
 .contaniner button {
+  position: absolute; 
   width: 45%;
   height: 50px;
-  text-align: center;
-  color: #FFF;
-  position: absolute; 
-  font-size: 17pt;
-  font-family: Courier New, Courier, monospace;
   top: 48%;
   left: 43%;
+  text-align: center;
+  color: #FFF;
+  font-size: 17pt;
+  font-weight: 800;
+  font-family: Courier New, Courier, monospace;
   background-size: 100% 100%;
   background-repeat:no-repeat;
   border:none;

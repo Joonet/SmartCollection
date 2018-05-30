@@ -21,13 +21,13 @@ App({
         dataType: 'json',
         responseType: 'text',
         success: function (res) {
-          // console.log(res.data)
+          console.log(res.data)
           that.globalData.levpp = res.data['levpp']
         },
         fail: function (res) { },
         complete: function (res) { },
       })
-    }, 1000)
+    }, 100)
 
 
     var token
@@ -79,7 +79,7 @@ App({
 
   globalData: {
     userInfo: null,
-    levpp: 10,
+    levpp: 100,
     windowWidth: 375,
     windowHeight: 603
   },
