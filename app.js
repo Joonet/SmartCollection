@@ -21,7 +21,7 @@ App({
         dataType: 'json',
         responseType: 'text',
         success: function (res) {
-          console.log(res.data)
+          // console.log(res.data)
           that.globalData.levpp = res.data['levpp']
         },
         fail: function (res) { },
@@ -79,7 +79,7 @@ App({
 
   globalData: {
     userInfo: null,
-    levpp: 100,
+    levpp: 10,
     windowWidth: 375,
     windowHeight: 603
   },

@@ -34,13 +34,14 @@ Page({
     wx.getStorage({
       key: 'isDataIncreased',
       success: function(res) {
-        console.log(res.data)
-        that.setData({
+        if (res.data == 'yes'){
+          that.setData({
           ollData: that.data.ollData + 20,
           oilSumData: that.data.oilSumData + 20,
           carbonSum: that.data.carbonSum + 57
 
         })
+        }
       },
       fail: function(res) {},
       complete: function(res) {},
@@ -51,7 +52,13 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+    wx.setStorage({
+      key: 'isDataIncreased',
+      data: 'no',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   },
 
   /**

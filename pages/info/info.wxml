@@ -1,7 +1,7 @@
 <!--pages/login/login.wxml-->
 
 <view class="contaniner">
-  <image class="bg_big" src='/images/费油变宝尾页.png'>
+  <image class="bg_big" src='/images/smart_collection_end.png'>
     <!-- <text class='inputView_name'>敬爱的@夫子庙站点</text>  -->
     <text class='aboutData' style='top: 19.5%; right: 52%;'>{{ollData}}L</text>
     <text class='aboutData' style='top: 30.5%; right: 52%;'>{{oilSumData}}L</text>

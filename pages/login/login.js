@@ -83,6 +83,7 @@ Page({
  * 与输入框绑定
  */
   usernameInput: function (e) {
+    console.log('输入时'+e.detail.value)
     this.setData({
       username: e.detail.value
     })
@@ -117,6 +118,7 @@ Page({
    */
   login: function() {
     var name = this.data.username
+    console.log('登录时' + name)
     var phone = this.data.phone
     if(!name || !phone){
       if (!phone && !name) {

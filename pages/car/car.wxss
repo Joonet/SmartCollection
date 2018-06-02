@@ -5,7 +5,7 @@
   flex-direction: column;  
   padding: 0;  
   box-sizing: border-box;
-  /* background-image: "/images/费油变宝主页.png"  */
+  /* background-image: "/images/smart_collection.png"  */
 }
 .contaniner .bg_big {
   top: 0;
